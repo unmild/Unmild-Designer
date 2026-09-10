@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — Unmild Designer</title>
+<meta name="description" content="The product story behind Unmild Designer: a Rust-built desktop EDA workspace for PCB layout, 3D verification, simulation, and fabrication output.">
+<meta name="theme-color" content="#0b0a17">
+
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Unmild Designer">
+<meta property="og:title" content="About — Unmild Designer">
+<meta property="og:description" content="A Rust-built desktop EDA workspace for PCB layout, verification, simulation, and fabrication output.">
+<meta property="og:image" content="images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About — Unmild Designer &amp; Its Developer">
+<meta name="twitter:image" content="images/og-image.png">
+
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>.nav-links{position:static;opacity:1;visibility:visible;transform:none;border-top:0;padding:0;flex-direction:row;background:none;min-height:0;}.nav-toggle{display:none;}</style></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home" },
+    { "@type": "ListItem", "position": 2, "name": "About" }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7.6" fill="#4c37e6"/><path d="M9.5 9 L14 22.5 L23.5 9.5" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23.5" cy="9.5" r="2.6" fill="#fff"/></svg>
+      <span class="brand-word">Unmild Designer</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" id="navToggle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <span class="visually-hidden">Menu</span>
+    </button>
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="features.html">Features</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a class="btn btn-primary store-link" href="https://apps.microsoft.com/detail/9N8356C8128M?hl=en-us&amp;gl=IN&amp;ocid=pdpshare" target="_blank" rel="noopener noreferrer">Get it from Microsoft</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section-tight" style="padding-bottom:0;">
+    <div class="container">
+      <span class="eyebrow">about</span>
+      <h1 style="margin-top:0.6em; max-width:18ch;">Why Unmild Designer exists</h1>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="origin">
+        <p>Unmild Designer exists to make the PCB workflow more deliberate: create the layout, review it visually, check what can be checked today, and release manufacturing data with its scope made clear.</p>
+        <p>The PCB canvas is built for direct work: place components, route traces, shape the board outline, use grid snapping and live coordinates, and adapt the interface with custom navigation, colors, shortcut keys, and dockable or floating panels.</p>
+        <p>When the layout needs a different perspective, 3D verification renders the current board for visual review. The Run view adds visible behavior, readings, and problem feedback for supported components, while the Simulation workbench provides transparent DC, AC, and transient RC analysis.</p>
+        <p>Unmild Designer also includes a first-pass microstrip and differential impedance calculator, a schematic-intent and basic ERC foundation, and a Verification workbench that brings basic PCB DRC and ERC results together.</p>
+        <p>For release, the basic DRC gate precedes Gerber X2 and Excellon output, review drawings, and a release manifest. The product does not present a preview as a certified manufacturing format: IPC-2581 is labeled as a geometry preview and ODB++ is not generated until the underlying design data can support it safely.</p>
+      </div>
+
+      <div class="dev-card">
+        <div class="dev-avatar" aria-hidden="true">G</div>
+        <div>
+          <h3>Product-first EDA software</h3>
+          <p class="role">PCB design · 3D verification · circuit behavior</p>
+          <p>Unmild Designer is written in Rust and independently developed from the ground up as a focused desktop workspace for taking boards from layout to fabrication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Named in Sanskrit, on purpose</h2>
+        <p>A few of Unmild Designer's own tools and file formats borrow their names from Sanskrit rather than the usual EDA-software vocabulary.</p>
+      </div>
+      <div class="name-grid">
+        <div class="name-card">
+          <div class="word mono">.tamas</div>
+          <div class="gloss">darkness / dark energy</div>
+          <p>The project file extension. Every board is saved as a single <code class="mono">.tamas</code> file inside its project folder.</p>
+        </div>
+        <div class="name-card">
+          <div class="word mono">Setu</div>
+          <div class="gloss">bridge / connector</div>
+          <p>The wire tool — the thing that bridges one pad to another with a copper trace.</p>
+        </div>
+        <div class="name-card">
+          <div class="word mono">Saad</div>
+          <div class="gloss">to call / to summon</div>
+          <p>The parts picker, also labeled Summon in the toolbox — call up a component and drop it on the board.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="get-band">
+        <h2>Come see the rest of it</h2>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="features.html">Tour the UI</a>
+          <a class="btn btn-secondary store-link" href="https://apps.microsoft.com/detail/9N8356C8128M?hl=en-us&amp;gl=IN&amp;ocid=pdpshare" target="_blank" rel="noopener noreferrer">Get it from Microsoft</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7.6" fill="#4c37e6"/><path d="M9.5 9 L14 22.5 L23.5 9.5" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23.5" cy="9.5" r="2.6" fill="#fff"/></svg>
+          <span class="brand-word">Unmild Designer</span>
+        </a>
+        <p>A PCB editor with a 3D view and a real circuit simulator, written in Rust. Project files use the <code>.tamas</code> extension.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get it</h4>
+          <ul>
+            <li><a href="https://apps.microsoft.com/detail/9N8356C8128M?hl=en-us&amp;gl=IN&amp;ocid=pdpshare" target="_blank" rel="noopener noreferrer">Microsoft Store</a></li>
+            <li><a href="features.html">Explore features</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Unmild Designer.</span>
+      <span>Desktop EDA software</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
